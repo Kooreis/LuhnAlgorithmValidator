@@ -1,4 +1,4 @@
-def luhn_algorithm(card_number):
-    def digits_of(n):
-        return [int(d) for d in str(n)]
-    card_number_digits = digits_of(card_number)
+odd_digits = card_number_digits[-1::-2]
+    even_digits = card_number_digits[-2::-2]
+    checksum = 0
+    checksum += sum(odd_digits)
